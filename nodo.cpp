@@ -5,6 +5,11 @@ Nodo::Nodo(Dato d) {
     siguiente = nullptr;
 }
 
+Nodo::Nodo(Dato d, Nodo* pn) {
+    dato = d;
+    siguiente = pn;
+}
+
 Dato Nodo::obtener_dato() {
     return dato;
 }

@@ -1,19 +1,23 @@
 #ifndef FERNANDEZ_109378_NODO_H
 #define FERNANDEZ_109378_NODO_H
-typedef char Dato;
-
+typedef int Dato;
 class Nodo {
-    // atributos
 private:
+
+    // ATRIBUTOS
     Dato dato;
     Nodo* siguiente;
 
-    // metodos
 public:
-    // constructor
-    // pos: construye un Nodo con dato = d y siguiente en NULL
-    Nodo(Dato d);
 
+    // CONSTRUCTORES
+
+    // pos: construye un Nodo con un dato d y siguiente en nullptr.
+    Nodo(Dato d);
+    // pos: construye un Nodo con un dato d y siguiente en pn
+    Nodo(Dato d, Nodo* pn);
+
+    // METODOS
     Dato obtener_dato();
 
     Nodo* obtener_siguiente();
@@ -22,5 +26,6 @@ public:
 
     void cambiar_siguiente(Nodo* pn);
 };
+
 
 #endif //FERNANDEZ_109378_NODO_H
